@@ -1,6 +1,8 @@
 # AutoUVOT
 Automated Swift UVOT Data Reduction Pipeline
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23261432.svg)](https://doi.org/10.5281/zenodo.23261432)
+
 AutoUVOT is a small Flask web service that builds Swift/UVOT light curves for a
 sky position. You give it an RA and DEC. It then:
 
@@ -182,3 +184,30 @@ For each image, `analysis.py` writes one row according to these rules:
 - `app.run` starts Flask's development server. For a public deployment, run it
   behind a production WSGI server and keep the database credentials out of the
   source code.
+
+## Citation
+
+If you use AutoUVOT in your research, please cite it through Zenodo:
+
+> Majumdar, J. (2026). *AutoUVOT: Automated Swift UVOT Data Reduction Pipeline*
+> (v1.0.0). Zenodo. https://doi.org/10.5281/zenodo.23261433
+
+```bibtex
+@software{majumdar_2026_autouvot,
+  author    = {Majumdar, Joysankar},
+  title     = {AutoUVOT: Automated Swift UVOT Data Reduction Pipeline},
+  year      = 2026,
+  publisher = {Zenodo},
+  version   = {v1.0.0},
+  doi       = {10.5281/zenodo.23261433},
+  url       = {https://doi.org/10.5281/zenodo.23261433}
+}
+```
+
+The DOI above is for version v1.0.0. To refer to AutoUVOT in general (always
+resolving to the latest version), use
+[10.5281/zenodo.23261432](https://doi.org/10.5281/zenodo.23261432).
+
+## License
+
+AutoUVOT is released under the [MIT License](LICENSE).
